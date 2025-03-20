@@ -1,0 +1,54 @@
+* {
+   padding: 0;
+   margin: 0;
+   
+}
+
+ body{
+   background-color: white;
+ }
+
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 20%;
+   border-radius: 20px;
+width: 13%;
+padding: 10px;
+   background-color: black;
+}
+
+main section {
+   padding: 10px;
+   width: 200px;
+   
+   
+   opacity: 0.8 ;
+   color: white;
+   height: 4;
+
+}
+
+input {
+   border: 0px solid black;
+   border-bottom: 1px solid;
+ border-radius: 20px;
+   opacity: 0.8;
+   padding: 10px;
+   margin: top;
+}
+
+.centra {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50vh;
+   width: 100vw;
+   display: flex;
+   padding: 100px;
+   border-radius: 10px;
+   flex-direction: column;
+}
