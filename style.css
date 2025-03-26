@@ -1,44 +1,48 @@
 * {
    padding: 0;
    margin: 0;
-   
+   box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho dos elementos */
 }
 
- body{
+body {
    background-color: white;
- }
-
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+}
 
 main {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   margin-top: 20%;
+   margin-top: 10%;
    border-radius: 20px;
-width: 13%;
-padding: 10px;
+   width: 100%; /* Ajustado para ficar mais responsivo */
+   max-width: 250px;
+   padding: 20px;
    background-color: black;
 }
 
 main section {
    padding: 10px;
-   width: 200px;
-   
-   
-   opacity: 0.8 ;
+   width: 100%;
+   max-width: 250px;
+   opacity: 0.8;
    color: white;
-   height: 4;
-
 }
 
 input {
-   border: 0px solid black;
-   border-bottom: 1px solid;
- border-radius: 20px;
+   border: none;
+   border-bottom: 1px solid white;
+   border-radius: 20px;
    opacity: 0.8;
    padding: 10px;
-   margin: top;
+   width: 100%;
+   max-width: 180px;
+   margin-top: 10px;
+ 
 }
 
 .centra {
@@ -46,9 +50,40 @@ input {
    justify-content: center;
    align-items: center;
    height: 50vh;
-   width: 100vw;
-   display: flex;
-   padding: 100px;
+   width: 100%;
+   padding: 20px;
    border-radius: 10px;
    flex-direction: column;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 450px) {
+   main {
+      width: 90%;
+      max-width: 250px;
+      margin: 0 auto;
+      margin-top: 100px;
+   }
+    
+   img {
+   margin-top: 100px;
+      padding-bottom: 0px;
+      max-width: 100px;
+   }
+   .centra {
+      margin-left:15px;
+   }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+   main {
+      width: 60%;
+      max-width: 400px;
+   }
+    
+   img {
+      margin-right: 0;
+      padding-bottom: 100px;
+   }
 }
